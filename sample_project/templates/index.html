@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2>This is crud app made using html flask and mongodb</h2>
+    <a href="/create">CREATE</a>
+    <a href="/update">UPDATE</a>
+    <a href="/delete">DELETE</a>
+    <h2>Task List</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.task }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
